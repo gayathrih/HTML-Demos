@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Frame App</title>
+        
+        <style>
+            iframe{
+                
+                border: 2px solid #00ff00;
+                padding-left: 30px;
+                padding-top: 50px;
+               
+            }
+            #frame2{
+                border-bottom-color: fuchsia;
+            }
+            
+        </style>
+    </head>
+    
+    
+    <body>
+        <iframe width="600px" 
+                height="100px"
+                src="home.html"
+                 >
+    </iframe>
+        
+        <iframe id="frame2"  width="" height="500px"
+                src="sidebar.html"
+                name="coursecontent">
+        </iframe>
+        
+        
+         <iframe  width="" height="500px"
+                 srcdoc="<h1>About NIIT Indiranagar</h1>"
+                 name="bodyframe">
+             
+        </iframe>
+        
+    </body>
+    
+</html>

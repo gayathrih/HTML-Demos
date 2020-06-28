@@ -1,0 +1,48 @@
+<html>
+    <head>
+        
+        <title>CSS Transitions</title>
+        
+        
+        <style>
+            div{
+                width: 200px;
+                height: 200px;
+                background-color: antiquewhite;
+                animation-name: myanimationrule;
+                animation-duration: 10s;
+                animation-direction: reverse;
+                animation-iteration-count: 2;
+                animation-play-state: running;
+              
+            }
+            
+            div:hover{
+                width: 400px;
+            }
+            
+            /*animation rule*/
+            @keyframes myanimationrule{
+                0%{background-color: aqua;}
+                20%{background-color: bisque;}
+                40%{background-color: red;}
+                60%{background-color: blue;}
+                80%{background-color: yellowgreen;}
+                
+                
+            }
+            
+        </style>
+    </head>
+    
+    
+    <body>
+        
+        <div></div>
+        <br>
+        <div></div>
+        
+    </body>
+    
+    
+</html>
