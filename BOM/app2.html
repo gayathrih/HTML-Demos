@@ -1,0 +1,45 @@
+<html>
+    
+    
+    <body>
+        
+        <script>
+            function myFunc(){
+             n=  window.frames.length;
+                 alert(n);
+             
+            }
+            
+            var  fbWindow;
+            
+            function func2(){
+                
+                  fbWindow = window.open("https://fb.com");
+            }
+            
+             function func3(){
+                 fbWindow.close();
+            }
+          
+            
+            
+            
+        </script>
+
+           
+        <iframe width="100px" height="100px"></iframe>
+        
+       <iframe width="100px" height="100px"></iframe>
+        
+        <button onclick="myFunc()">No.of Frames</button><br>
+        
+         <button onclick="func2()">window_open</button><br>
+        
+        <button onclick="func3()">window_close</button>
+        
+            
+         
+        
+    </body>
+    
+</html>

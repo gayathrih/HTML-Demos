@@ -1,0 +1,40 @@
+<html>
+    
+    
+    <body>
+        
+        <script>
+           
+            var timeoutID;
+            
+            function myFunc(){
+                 alert("this is javascript");
+            }
+            
+            function delayedAlert() {
+                 
+               timeoutID = window.setTimeout(myFunc, 2*1000, 'That was really slow!');
+}
+            
+            function clearAlert() {
+                  window.clearTimeout(timeoutID);
+              }
+        </script>
+
+           
+      <p>Live Example</p>
+        <button onclick="delayedAlert();">
+            Show an alert box after two seconds
+        </button>
+        
+<p></p>
+        
+<button onclick="clearAlert();">
+    Cancel alert before it happens
+</button>
+            
+         
+        
+    </body>
+    
+</html>

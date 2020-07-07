@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title> Javascript Validation</title>
+        
+    </head>
+    
+    
+    <body>
+        <script>
+            
+               function getValue()
+               {
+                   v1 = document.getElementById("n1").value;
+                   v2=  document.getElementById("n2").value;
+                  
+                   add =  parseInt(v1)+parseInt(v2);
+                   sub=  parseInt(v1) - parseInt(v2);
+                    mul=  parseInt(v1) * parseInt(v2);
+                    div=  parseInt(v1)/parseInt(v2);
+                   
+                    document.getElementById("p1").innerHTML=add;
+                    document.getElementById("p2").innerHTML=sub;
+                    document.getElementById("p3").innerHTML=mul;
+                    document.getElementById("p4").innerHTML=div;
+                  
+               }
+        </script>
+        
+        Enter val1 : <input type="number" id="n1"/><br/>
+        Enter val2 : <input type="number" id="n2"/><br/>
+        
+       
+        <label> Add = <p id="p1">output</p><br>
+            sub = <p id="p2">output</p><br>
+            Mul = <p id="p3">output</p><br>
+            Div = <p id="p4">output</p><br>
+        </label>
+       
+        
+        <button onclick="getValue()">click</button>
+        
+    </body>
+    
+    
+</html>

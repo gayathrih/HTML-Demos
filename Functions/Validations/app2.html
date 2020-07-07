@@ -1,0 +1,52 @@
+<html>
+
+
+   <body>
+       
+       <script>
+            function formValidation(){
+                
+                
+                 name= document.forms["loginform"]["uname"].value;
+                
+                
+                 pwd= document.forms["loginform"]["upwd"].value;
+                
+                
+                 mbno= document.forms["loginform"]["mbno"].value;
+                
+                
+                  if(name.length==0 || name.length <=2){
+                         alert("Pls enter username and name should more thn 2 chars");
+                   }
+                
+                 if(pwd.length==0 || pwd.length <=5){
+                         alert("Pls enter passsowrd and pwd should more thn 5 chars");
+                   }
+                
+                if( mbno.length==0 || isNaN(mbno)){
+                      alert("mbno: enter digites only");
+                   }
+               
+                 
+                         
+            }
+           
+       </script>
+       
+       <form name="loginform" onsubmit="formValidation()">
+           
+            Username : <input type="text" name="uname"/><br>
+           
+            pasword: <input type="password" name="upwd"/><br>
+           
+             Mobileno : <input type="text" name="mbno"/><br>
+           <input type="submit" value="Enter">
+           
+           
+       </form>
+       
+       
+    </body>
+
+</html>

@@ -1,0 +1,43 @@
+<html>
+    
+    
+    <body>
+        
+        <script>
+           
+             function func_1(){
+                 
+                name= document.getElementById("uname").value;
+                  alert(name);
+             }
+            
+            
+             function func_2(){
+                 
+                pwd= document.getElementsByName("addr").length;
+                  alert(pwd);
+             }
+            
+            
+            function func_3(){
+                 
+        res=document.getElementsByTagName("input").item(2).value;
+                  alert(res);
+             }
+            
+       
+        </script>
+
+        
+          uname : <input type="text" id="uname"/><br>
+        
+           addr1 :  <input type="text" name="addr"/><br>
+           addr2 :  <input type="text" name="addr"/><br>
+    
+        <button onclick="func_1()">getElementByID</button><br>
+        <button onclick="func_2()">getElementByName</button><br>
+        
+        <button onclick="func_3()">getElementTagName</button>
+    </body>
+    
+</html>

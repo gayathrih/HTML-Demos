@@ -1,0 +1,60 @@
+<html>
+    
+    <head>
+       <title>BOM DEmo</title>
+    
+    </head>
+    <body>
+        
+        <script>
+            
+            function navigatorFunc(){
+           
+            alert("hello");
+            alert(navigator.appName);
+            alert(navigator.appVersion);
+            alert(navigator.userAgent);
+           
+            }
+            
+            function screenFunc(){
+                
+                document.write(screen.availHeight+" <br>"+
+                               screen.availWidth+"<br>"+
+                              screen.pixelDepth+"<br>"+
+                              screen.height+"<br>"+
+                              screen.width);
+            }
+            
+            
+             function historyFunc(){
+                
+                //history.back();
+                 //history.forward();
+                 
+                 history.go(2);
+            }
+            
+            
+              function locationFunc(){
+                
+                 
+                 document.write(location.href);
+            }
+        </script>
+        
+        
+        <button onclick="navigatorFunc()">Naviator</button><br>
+        
+        
+         <button onclick="screenFunc()">screen</button><br>
+        
+        
+       <button onclick="historyFunc()">history</button><br>
+        
+        
+        <button onclick="locationFunc()">LOcation</button><br>
+        
+    </body>
+    
+</html>
