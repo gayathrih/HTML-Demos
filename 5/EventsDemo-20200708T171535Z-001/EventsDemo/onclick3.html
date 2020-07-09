@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<html>
+<body>
+
+Text1: <input type="text" id="t1" value="Hello,Good Morning !!! "><br>
+Text2: <input type="text" id="t2"><br><br>
+
+<button onclick="myFunction()">Copy Text</button>
+
+<p>A function is triggered when the button is clicked. The function copies the text from Text1 into Text2.</p>
+
+<script>
+    function myFunction() {
+        document.getElementById("t2").value = document.getElementById("t1").value;
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<html>
+
+    
+    <body>
+        
+        
+        <script>
+            function myformValidation()
+            {
+                
+                if( (document.f1.M.checked==false) &&
+                    (document.f1.F.checked==false)){
+                        alert("pls select gender");
+                        return false;
+                   
+                   }
+                else{
+                    if(document.f1.M.checked==true ||
+                       document.f1.F.checked==true){
+                    
+                     alert("gender has selected");
+                        return true;
+                    }
+                     
+                }
+                     
+            }
+            
+        </script>
+        
+         <h1>Welcome to Javascript</h1> 
+        
+        <form name="f1" onsubmit="return myformValidation();">
+            
+            Gender : 
+            <input type="radio" name="gender" id="M">Male
+            
+        <input type="radio" name="gender" id="F">FeMale<br>
+            
+            <input type="submit" value="Enter"/>
+            <input type="reset" value="Reset"/>
+            
+            
+            
+        </form>
+        
+    </body>
+
+
+
+</html>
